@@ -1,0 +1,94 @@
+.services-page{ 
+  position: relative; 
+  padding-top: 3%;
+  background: #fff;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.heading strong{
+    color: #000;
+    font-size: 1.3rem;
+}
+.heading h3{
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+#services-cnt{
+    width: 95%;
+    margin: 0% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.vehicles-container{
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.vehicles{
+    width: 300px;
+    height: 170px;
+    position: relative;
+}
+
+.vehicles img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.vehicle-details{
+    padding: 10px;
+    color: #000;
+}
+.vehicle-details h3{
+    font-size: 15px;
+}
+.vehicle-details h3 span{
+    font-size: 10px;
+}
+
+b{
+    color: orangered;
+}
+
+.booking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking .button{
+    width: 280px;
+    border-radius: 10px;
+}
+.car-year{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50px;
+    height: 25px;
+    margin-bottom: 10px;
+    border: thin solid #000;
+    border-radius: 5px;
+}
+.year{
+    text-align: center;
+    margin: auto;
+}
+

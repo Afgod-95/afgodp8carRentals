@@ -1,0 +1,78 @@
+.about{
+    width: 100%;
+    margin-top: 5%;
+    background: #fff;
+}
+
+.about-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paragraph{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.para span{
+    background: -webkit-linear-gradient(right, orangered,orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+ .paragraph .button{
+    width: 150px;
+    text-align: center;
+}
+.para h1{
+    text-align: center;
+    font-size: 2.2rem;
+}
+.paragraph p{
+    width: 80%;
+}
+
+.paragraph .a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    background: linear-gradient(130deg, rgb(27, 75, 231), rgb(0, 217, 255));
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding-bottom: 10%;
+    transition: all ease .5s;
+}
+
+
+
+@media (max-width: 640px){
+    .about-heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        margin: 0% auto;
+    }
+    .para span{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .para h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .paragraph p{
+        width: 95%;
+    }
+    
+}
+
+
+

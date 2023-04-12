@@ -1,0 +1,344 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+  
+}
+a{
+    text-decoration: none; 
+}
+#section{
+    background: rgba(247, 247, 247, 0.9);
+    transform: translateY(8.6%);
+    height: 106.5vh;
+}   
+.home-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0% auto;
+}
+.background{
+    display: none;
+}
+.home-contents{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.home-contents h1{
+    font-size: 3rem;
+    color: #000;
+} 
+.backround-image{
+    width: 600px;
+    height: 700px;
+    position: relative;
+}
+.backround-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.icons-box, .icons-box a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icons-box a{
+    margin-top: 3%;
+    width:180px;
+    border-radius: 10px;
+    height: 60px;
+    gap: 0;
+    padding: .7rem;
+    background: #000;
+    transition: all ease .5s;
+}
+.icons-box a:hover{
+    background: transparent;
+    color: #000;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.01), 0 2px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.icons-box img, .icons-box i{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+.icons-box i{
+    font-size: 2rem;
+}
+.form{
+    transform: translateY(200%);
+    position: absolute;
+    display: flex;
+    max-width: 63.9%;
+    color: #000;
+}
+.form form{
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.01), 0 2px 4px -2px rgba(0, 0, 0, 0.01);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1.5rem;
+    padding-left: 20px;
+    align-items: center;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+.title input{
+    width: 290px;
+    height: 2.5rem;
+    border-radius: 8px;
+    background: rgba(247, 247, 247, 0.9);
+    padding: 5px;   
+}
+#input1{
+    width: 146px;
+    text-align: center;
+}
+
+.btn input{
+    background: linear-gradient(120deg, rgb(27, 75, 231), rgb(0, 217, 255));
+    height: 2rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.btn input[type = "submit"]{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type = "date"], input[type = "text"] {
+    font-size: 12px;
+    color: #7c7c7c;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.section{
+    background: #fff;
+}
+.ride-header{
+    width: 95%;
+    margin: 0% auto;
+}
+
+.say-something{
+    text-align: center;
+
+}
+
+.say-something p{
+    padding-top: 1.5rem;
+    font-size: 15px;
+}
+.say-something h3{
+    margin-bottom: 1.8rem;
+    font-size: 2rem;
+}
+.say-something::before{
+    content: "";
+    position: absolute;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    left: 30%;
+    width: 10%;
+    height: 4px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: linear-gradient(90deg, orangered, orange);
+    animation: animate 10s linear infinite;
+
+}
+@keyframes animate {
+    0% {
+		width: 0%;
+	}
+
+	50% {
+		width: 40%;
+	}
+
+	100% {
+		width: 1%;
+	}
+}
+
+.content-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+.content{   
+    max-width: 300px;  
+    padding: 15px;
+    border-radius: 10px; 
+    background: #fff; 
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(to right, orangered, orange);
+    margin-bottom: .8rem;
+}
+.location i{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+.choose{
+    text-align: center;
+    font-size: 13px;
+}
+.choose h3{
+    font-size: 1rem;
+    margin-bottom: .8rem;
+}
+/*----------MEDIA QUERY FOR PHONES-------------*/
+@media (max-width: 640px){
+    #section{
+        background: rgba(247, 247, 247, 0.9);
+        transform: none;
+        margin-top: 10%;
+        height: fit-content;
+    } 
+    .home-page{
+        flex-direction: column;
+    }
+    .home-contents{
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-contents span{
+        font-size: 18px;
+    }
+    .home-contents h1{
+        font-size: 30px;
+    }
+    .backround-image{
+        display: none;
+    }
+    .background, .imageBox{
+        display: flex;
+        position: relative;
+        margin: 0% auto;
+        max-width: 370px;
+        max-height: 230px;
+    }
+    .backround img, .imageBox img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .icons-box, .icons-box a{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .icons-box a{
+        margin-top: 3%;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons-box .cont-2{
+        width: 170px;
+    }
+    .form{
+        position: relative;
+        transform: none;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        min-width: 95%;
+    }
+    .form form{
+        display: flex;
+    }
+    .title{
+        width: 95%;
+    }
+    .title input{
+        min-width: 290px;
+        min-height: 2.5rem;
+        text-align: left;
+        border-radius: 8px;
+        background: rgba(247, 247, 247, 0.9);
+        padding: 12px;   
+    }
+
+    
+    .btn input{
+        background: linear-gradient(120deg, rgb(27, 75, 231), rgb(0, 217, 255));
+        height: 2rem;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        color: #fff;
+    }
+    
+    
+}
+
+@media (max-width: 550px){
+    .home-contents span{
+        font-size: 18px;
+    }
+    .background, .imageBox{
+        max-width: 350px;
+        max-height: 200px;
+    }
+    #input1{
+        text-align: left;
+    }
+
+    .btn #input1{
+        text-align: center;
+    }
+
+    .icons-box a{
+        width: 150px;
+        height: 40px;
+        font-size: 12px;
+    }
+    .icons-box .cont-2{
+        width: 150px;
+    }
+    .title{
+        width: 100%;
+    }
+}
+
